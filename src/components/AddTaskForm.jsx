@@ -144,9 +144,8 @@ const AddCardModal = ({ isOpen, onClose, onSubmit, initialValues }) => {
                   {option.label}
                 </option>
               ))}
-              {/* Add more options as needed */}
             </select>
-            {formik.touched.assignee && formik.errors.title && (
+            {formik.touched.assignee && formik.errors.assignee && (
               <div className="mt-1 text-sm text-red-500">
                 {formik.errors.assignee}
               </div>
